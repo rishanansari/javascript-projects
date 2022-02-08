@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>get and set attribute</title>
+    <style>
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+    </style>
+  </head>
+
+
+  <body>
+    <div id="test" class="red"> HELLO EVERYONE!!!</div>
+    <button onclick="testing()">Click Me</button>
+    <h1 id="res"></h1>
+  </body>
+<script type="text/javascript">
+
+var test = document.getElementById("test"); //make global variable q ki baar baar use ho raha tha--------- 
+function testing() {
+    
+   var cls = test.getAttribute("class");
+// document.getElementById("res").innerText = cls; 
+
+ if (cls == "red") {
+     test.setAttribute("class","blue");
+ }else{
+     test.setAttribute("class","red");
+ }
+
+}
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addeventlistner/removeeventlitner</title>
+</head>
+
+<body>
+<h1 id="counter">0</h1>
+<button id="btn">Click Me</button>
+<button id="stop" onclick="stop()">Stop</button>
+</body>
+
+<script type="text/javascript">
+var i = 0;
+// document.getElementById("btn").addEventListener("click", function() {
+//     document.getElementById("counter").innerText = i;
+//     i++;
+// });  ye bhi ek way hai direct function under ......or baaki way niche hai
+
+document.getElementById("btn").addEventListener("click", counter); 
+
+function counter() {
+    document.getElementById("counter").innerText = i;
+    i++;
+};
+
+document.getElementById("btn").addEventListener("mouseenter",colorred);
+function colorred() {
+    document.getElementById("counter").style.color = "red";
+};
+
+
+document.getElementById("btn").addEventListener("mouseleave",colorblack);
+function colorblack() {
+    document.getElementById("counter").style.color = "black";
+};
+
+function stop() {
+    document.getElementById("btn").removeEventListener("click",counter)
+}
+
+
+
+
+
+
+</script>
+
+
+
+</html>

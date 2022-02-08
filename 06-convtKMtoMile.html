@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convert KMS to MILES</title>
+</head>
+<body>
+    <input type="number" id = "kms" step="any"/>
+    <span> KMS <button onclick=calc()>Convert</button> <input type="text" id = "mile" step="any"/> MILES </span>
+    <h1 id="res"></h1>
+
+</body>
+<script>
+// 1 km = 0.621371 miles 
+
+
+
+
+const calc=()=>{
+    var kilometer = document.getElementById("kms").value;
+    var factor = 0.621371
+    var miles = (kilometer*factor);
+    document.getElementById("mile").value =  `${miles}`
+}
+
+
+</script>
+</html>

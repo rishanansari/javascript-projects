@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swaping two number</title>
+</head>
+<body>
+    
+</body>
+<script>
+//using temoparary variable
+
+var a = 10;
+var b = 20;
+
+// console.log(`the value of a is : ${a} and b is : ${b}`);
+//now-----
+
+var temp;
+temp = a;
+a = b;
+b = temp;
+console.log(`After swapping \n the value of a is : ${a} and \n b is : ${b}`);
+
+
+// ---now without using third variavble----
+// parseInt if we are taking number from user -----------
+var a = 10
+var b = 20
+a = a+b ; //a = 30
+b = a-b; //b= 10 swap b to a 
+a = a-b; //now a = 20 swap a to b----
+
+console.log(`After swapping \n the value of a is : ${a} and \n b is : ${b}`)
+
+// one more method destructiong of array--------------just [a,b]=[b,a]
+</script>
+</html>

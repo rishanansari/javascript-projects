@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>basic javascript</title>
+  </head>
+  <body>
+
+    <input type="text" name="name" id="name">
+    <button onclick="greet()">Greet</button>
+
+    <div class="greet">
+    </div> 
+<br><br>
+    <!-- <div id="main" class="you">
+      <h1>you are react</h1>
+    </div> -->
+
+
+<!-- .................................................................................................. -->
+<input type="number" name="first" id="first" step="any">
+<select name="" id="ope">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">x</option>
+<option value="/">/</option>
+
+</select>
+<input type="number" name="second" id="second" step="any">
+<br><br>
+<button onclick="cal()">Calculate</button>
+<input type="text" name="" id="res" readonly=""/>
+
+  </body>
+
+  <script type="text/javascript">
+
+// SIMPLE CALCULATOR ...............................................
+function cal() {
+    var opr1=document.getElementById("first").value;
+
+    var opr2=document.getElementById("second").value;
+    var ope=document.getElementById("ope").value;
+
+    if (ope=="+") {
+        var res = parseInt(opr1) + parseInt(opr2);
+    }
+    if (ope=="-") {
+        var res = parseInt(opr1) - parseInt(opr2);
+    }
+    if (ope=="*") {
+        var res = parseInt(opr1) * parseInt(opr2);
+    }
+    if (ope=="/") {
+        var res = parseInt(opr1) / parseInt(opr2);
+    }
+    document.getElementById("res").value = res; 
+}
+
+// function.............calling...............................
+function greet() {
+   // var myname= document.getElementById("name").value;
+    var string="wooh! "+document.getElementById("name").value +" your form is submitted" ;
+
+    alert(string);
+    document.getElementsByClassName("greet")[0].innerHTML= string + " on live server";
+}
+
+
+
+
+
+
+//  functions alert() , confirm() , prompt() , console.log() , document.write() ,.............. 
+
+    // alert("hello world");
+    // document.write("<h1>hello javascript developer</h1>");
+    // console.log("hello brother");
+    // prompt("please enter your name", "MR. capital");
+    // confirm("do you want to continue?");
+
+    // var x ="10";
+    // document.write(x);
+
+    // var Name="ANSARI ABID GAUSH MOHD";
+    // alert(Name);
+
+    // DOM GET ELEMENT ----FORMS IN HTML.............................
+    //    var z= document.getElementById("main");
+    // document.write(z);
+    //  document.getElementById("main").innerHTML ="<h3> wow you are genius</h3>";
+
+    //  document.getElementById("main").innerHTML ="<button> welcome home </button>";
+
+    // console me dekhe ge to pata chale ga ise object bana diya hai................
+
+    // document.getElementsByClassName("you")[0].innerHTML ="wow change";
+
+    // document.getElementsByClassName("you")[1].innerHTML ="javascript";
+
+// concationation String........................
+
+// var a="hello";
+// var b=" Everyone"; 
+// // <!-- one space --> 
+// var c= a+b;
+// // alert(c);
+
+// alert(c+" Abid");
+
+// opreation 1.arithematic , 2.logical , 3.ternary , 4.assignament , 5.comaprison
+
+// var x= 10;
+// var y= 9;
+// var z= x+y ; 
+// document.write(z);
+
+// var x= 10;
+// var y= 9;
+// var z= x-y ; 
+// document.write(z);
+
+// var x= 10;
+// var y= 9;
+// var z= x/y ; 
+// document.write(z);
+
+// var x= 10;
+// var y= 9;
+// var z= x%y ; 
+// // document.write(z);
+
+// var x=15;
+// x++;
+// document.write(x);
+
+// var x=15;
+// x--;
+// document.write(x);
+
+// // comparision op.......
+
+// var x= 20;
+// var y= 20;
+// var z = x==y;
+// document.write(z);
+
+// var x= 20;
+// var y= 20;
+// var z = x!=y;
+// document.write(z);
+
+// var x= 20;
+// var y= 20;
+// var z = x>y;
+// document.write(z);
+
+// var x= 20;
+// var y= 20;
+// var z = x<y;
+// document.write(z);
+
+// var x= 20;
+// var y= 20;
+// var z = x<=y;
+// document.write(z);
+
+// var x= 20;
+// var y= 20;
+// var z = x>=y;
+// document.write(z);
+
+// logical and tenary op................&& and , || or ..false and true answer 0,1
+
+// var x= 1; //true
+// var y=1; //true
+// var z = x&&y ;
+// document.write(z);
+
+// var x= 0; //false
+// var y=0; //false
+// var z = x||y ;
+// document.write(z);
+
+// // now ternary op..........<condition>? <true>:<false>
+// var x=15;
+// var y=6;
+// var z= x>y? "yes":"no"
+
+// document.write(z)
+
+// // assignment op....... c=a , c+=a => c=c+a, c-=a=> c=c-a , c*=a , c/=a , c%=a etc ..........
+
+// var a = 10;
+// var z = a ;
+// document.write(z);
+
+// var a = 15;
+// var z = 10 ; 
+// z+=a //....=> z=z+a slly - , / , % , * etc
+// document.write(z);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</html>

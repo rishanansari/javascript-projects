@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count down 60 mint</title>
+    
+</head>
+
+<body>
+    <center>
+<div id="main"> 
+    <h1>count down</h1>
+    <h2 id="countdown">clock</h2>
+
+<button onclick="start()">Exam Start</button>
+</div>
+</center>
+</body>
+<script type="text/javascript">
+
+var m = 12;
+var s = 15;
+
+
+
+function start() {
+    
+    document.getElementById("countdown").innerText = m + ":" + s ;
+    myinertval = setInterval(countd , 100)
+    
+} //we can give directly function into set interval//
+function countd() {
+    var setint = document.getElementById("countdown").innerText = m + ":" + s ;
+    s--;
+    s = s < 10 ? "0"+s : s;
+    if (s == 0) {
+    s = 12;
+    if (s == 12) {
+        document.getElementById("countdown").innerText = m + ":" + s;
+        m--;
+        m = m < 10 ? "0"+m : m;
+    }  
+    if (m == 0) {
+        
+        alert("Exam Paper Is Submitted Automatically");
+        
+}
+}
+
+
+}
+
+
+
+
+</script>
+</html>

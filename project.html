@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project js</title>
+</head>
+<body>
+    
+<input type="number" name="number" id="F1" placeholder="enter any number"step="0.01"/>
+
+<select id="ope" >
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">x</option>
+<option value="/">/</option>
+</select>
+<input type="number" name="number" id="F2"  placeholder="enter any number" step="0.01"/>
+<BR></BR>
+<button onclick="cal()">Calculate</button>
+
+<input type="text" name="res" id="res" readonly="" step="0.01"/>
+<br><br>
+<!-- .....................................................................................................calculator up -->
+<!-- prompt function use -->
+
+Name : <i id="result"></i> <br>
+<button onclick="call()"> Call</button>
+<!-- ................................................................prompt calling up-->
+
+
+
+</body>
+
+<script type="text/javascript">
+
+
+
+// ...............................................prompt below......................
+function call() {
+    var name = prompt("Write your Name here", "");
+document.getElementById("result").innerHTML = name ;
+}
+
+// ...................................................................................calculator below........
+function cal() {
+    
+    var opr1= document.getElementById("F1").value;
+    var opr2= document.getElementById("F2").value;
+    var ope=document.getElementById("ope").value;
+
+    if (ope=="+") {
+        var res= parseInt(opr1)+parseInt(opr2);
+    }   
+    if (ope=="-") {
+        var res= parseInt(opr1)-parseInt(opr2);
+    }   
+    if (ope=="*") {
+        var res= parseInt(opr1)*parseInt(opr2);
+    }   
+    if (ope=="/") {
+        var res= parseInt(opr1)/parseInt(opr2);
+    }   
+document.getElementById("res").value =res;
+
+}
+// ..................................................calc/..................
+
+console.log("hello wolrd")
+// redeclare and re assign the value.........
+var x = "ansari"
+var x = "abid"
+x="g.m ansari"
+ console.log(x)
+
+// re assign the value but can't redeclare the variable let..............
+let y = "hello"
+// let y ="world" can't display becoz alreday exists...
+y="wolrd"
+ console.log(y)
+ 
+//  niether re Declare variavle nor re assign the value............
+
+const z ="javascript is Everywhere!!"
+// const z= "wow!!"
+// z=can't display
+console.log(z)
+
+// CONCATINATION OF STRINGS AND DATA TYPES ; ....
+const she =3 
+const me = 4
+
+// const he = she + me ;
+// console.log(he)
+console.log(`${she} ${me}`)
+
+// truthy and falsey values .... ......................
+const you = 10;
+
+if (you>=20) {
+    console.log("you are adult")
+} else {
+    console.log("you are child")
+    
+}
+
+// const name = ""
+// // "" , false , undefined , null , 0...
+// if (name) {
+//     console.log(`it is true ${name}`)
+// } else {
+//     console.log(`it is false ${name}`)
+// }
+
+// ternary operators ....?... we can say that this is replacement of if else operation...syntex... const user = condition ? "true":"false"
+
+// const user = 22
+
+// console.log(user>=20? "you are adult" : "a child")
+
+
+// const age = 18
+//  const my = age >=18 ? "adult" :"child"
+// console.log(my)
+
+// OBJECTS ..... ......... ...... ..........................
+// it's a non primiative data type called it reference typr data type 
+
+// syntex 
+//  const person = {
+//     (key)name : ansari(value) ,
+//     age : 18 , 
+//     salary : 18000,
+//     company : LnT
+// }
+
+// let company ={
+//     name : "AliBaba",
+//     owner : "jack-Ma",
+//     salary : 25000,
+//     details :{
+//         city : "china"
+//     }
+
+// }
+
+// // both methods are to display object.... .
+//  console.log(company.name +" owner " +company.owner +" from " + company.details.city) 
+//  console.log(company["owner"] + " " + company["owner"])
+
+//  destucturing of object ............
+
+let company ={
+    name : "AliBaba",
+    owner : "jack-Ma",
+    salary : 25000,
+    details :{
+        city : "china"
+    }
+
+}
+
+let { name , owner , salary: mySalary , details:{city}} = company; 
+//(this means destructuring)
+
+console.log(name) //(no need to write "company.name")
+
+console.log(city) //(city destructing from the detials)
+console.log(mySalary) //( changing the name in destructring)
+console.log(company)
+
+
+
+// if 
+// const variable = {
+//     here : "here"
+//     want : "want"
+// }
+// no need to write key as the key and values are same write only vlaues..
+// ................................................................end of object
+
+// Function AND ARROW FUNCTION ..... ......  ..........
+
+function names(own , age) {
+    console.log(`ansari abid ${own} and my age is = ${age}`)
+}
+names("G.M" , 18)
+    
+const meraj = () => {
+
+    console.log()
+}
+
+// var cars = ["1" , "2" , "3" , "4"];
+// cars[0]="one"
+// document.write(cars[1]);
+
+
+
+
+
+
+</script>
+</html>

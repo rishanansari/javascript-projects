@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lexical this</title>
+</head>
+<body>
+    
+<button onclick="this.style.display = 'none' ">click me to hide me</button>
+<button onclick="this.style.background = 'red'">click me to hide me</button>
+
+<!-- ------------------------------------ -->
+<button onclick="remove(this)">click me to hide me</button>
+</body>
+<script type="text/javascript">
+
+function remove(elem) {
+    elem.style.display ="none";
+}
+// -----------------------------------------
+
+
+var person = {
+
+firstName : "Abid",
+lastName : "Ansari",
+fullName : function call() {
+    return this.firstName + " "+this.lastName ;
+},
+
+}
+document.write("<h1>" + person.fullName());
+
+
+</script>
+</html>

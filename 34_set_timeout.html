@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET TIME OUT / clear time out</title>
+</head>
+<body>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+
+
+</body>
+<script type="text/javascript">
+var my; //gobal banaye q ki ise har jagah(multiple) use karna hai
+
+function start() {
+    my = setTimeout(
+function () {
+    document.write("<h1>ANSARI ABID</h1>");
+},
+5000
+    );
+}
+function stop() {
+        clearTimeout(my);
+alert("time stopped");
+    }
+</script>
+</html>

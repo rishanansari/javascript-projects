@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try and catch </title>
+</head>
+<body>
+    <button onclick="test()">Click Me</button>
+    <h1 id="res"></h1>
+</body>
+<script type="text/javascript">
+function test() {
+    
+    
+try {
+    // var number = 5;
+    // alertf();
+
+    var number = "geuds";
+    var x = number.toUpperCase();
+    alert(x);
+    document.getElementById("res").innerText = x;
+
+} catch (err) {
+    document.getElementById("res").innerText = err;
+}
+
+}
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function call</title>
+</head>
+<body>
+    <input type="text" name="name" id="name">
+    <button onclick="greet()">Greet</button>
+<h1 class="dom"></h1>
+
+</body>
+
+<script type="text/javascript">
+
+function greet() {
+    
+    var name = document.getElementById("name").value;
+var string = "hello " + name ;
+document.getElementsByClassName("dom")[0].innerHTML = string;
+    alert(string);
+}
+
+
+</script>
+
+
+
+</html>

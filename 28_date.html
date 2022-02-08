@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>date and it's type</title>
+  </head>
+  <h1 id="res"></h1>
+  <button onclick="getdate()">Date</button>
+  <button onclick="getyear()">Year</button>
+  <button onclick="getmonth()">Month</button>
+  <button onclick="getcurrentdate()">Current-Date</button>
+  <button onclick="getday()">Current-Day</button>
+  <button onclick="minute()">minute</button>
+  <body></body>
+  <script type="text/javascript">
+    var date = new Date();
+
+    function getdate() {
+      document.getElementById("res").innerText = date;
+    }
+    function getyear() {
+      document.getElementById("res").innerText = date.getFullYear();
+    }
+    var month = [
+      "jan",
+      "feb",
+      "march",
+      "april",
+      "may",
+      "june",
+      "july",
+      "august",
+      "sept",
+      "oct",
+      "nov",
+      "dec",
+    ];
+    function getmonth() {
+      document.getElementById("res").innerText = month[date.getMonth()];
+    }
+    var days = [
+      "sunday",
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday",
+      "staurday",
+    ];
+    function getday() {
+      document.getElementById("res").innerText = days[date.getDay()];
+    }
+
+    function getcurrentdate() {
+      document.getElementById("res").innerText = date.getDate();
+    }
+    function minute() {
+      document.getElementById("res").innerText = date.getMinutes();
+    }
+  </script>
+</html>

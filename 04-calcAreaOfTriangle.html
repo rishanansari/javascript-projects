@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caclulate area of triangle</title>
+</head>
+<body>
+    
+</body>
+<script>
+//Right angle traingle area = (base*height)/2
+
+var base = prompt("please enter the base value")
+var height = prompt("please enter the height value")
+
+var area = (base*height)/2;
+
+console.log("Base : "+base + "Height :"+ height + "area :"+ area);
+
+//any regular triangle....Heron's Formula
+
+var a = prompt("enter first side")
+var b = prompt("enter second side")
+var c = prompt("enter third side")
+
+var s = (a+b+c)/2;
+var area = Math.sqrt(s(s-a)*(s-b)*(s-c))
+console.log("area : " + area);
+
+
+</script>
+</html>
+
+
+
+

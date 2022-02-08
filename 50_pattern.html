@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRINT PATTERN form user</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+
+var patternrows = prompt("enter number for pattern")
+
+pattern(patternrows);// aurgument value .... to calling a function--
+function pattern(rows) { // parameter to declare and define--
+    
+for( var i = 1 ; i<= patternrows ; i++){
+// document.write(i + "<br>");
+
+for (var j = 1 ; j <=i ; j++){
+
+document.write(i);
+}
+document.write("<br>");
+
+}
+for( var i = patternrows-1 ; i>=1 ; i--){
+// document.write(i + "<br>");
+
+for (var j = 1 ; j <= i ; j++){
+
+document.write(i);
+}
+document.write("<br>");
+
+}
+}
+
+
+
+
+</script>
+</html>

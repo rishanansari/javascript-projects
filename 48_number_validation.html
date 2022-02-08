@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NUMBAR VALIDATION</title>
+  </head>
+  <body>
+    Please Enter Your Number <br />
+    <input type="text" name="" onkeyup="val(this)" />
+    <div id="res"></div>
+  </body>
+  <script type="text/javascript">
+    function val(elem) {
+      //this for elem para to connect input....
+      // document.getElementById("res").innerText = elem.value;
+
+      // if (isNaN(elem.value)) {
+      //     alert("yes it is not a number");
+      // } else {
+      //     alert("yes it is a number");
+      // }
+
+      document.getElementById("res").style.color = "red";
+      if (isNaN(elem.value)) {
+        document.getElementById("res").innerText = " please enter numbers only";
+      } else {
+        document.getElementById("res").innerText = "";
+
+        if (elem.value.length > 10) {
+          document.getElementById("res").innerText =
+            "please enter 10 (ten) digits only";
+        } else {
+          document.getElementById("res").innerText = "";
+        } // ye if ko us ke under hi dala hai warna only digit wala error hi le ga agar bahar daale to------
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>printing a page</title>
+</head>
+<body id="body">
+    <center>
+    <img src="clock.png" alt="clock" >
+    <h1>printable heading</h1>
+<p id="data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam molestiae nesciunt ad, eius nemo corrupti nobis repellat incidunt dignissimos natus pariatur consectetur facere laborum fugiat eaque nulla, distinctio nostrum cum animi culpa sint, repudiandae ex. Nam, tempore iusto dolorem ad dolore nisi voluptas fugit aliquid accusamus provident ut veritatis minima nemo laudantium. Voluptate veniam eos ad id dicta libero nihil non laboriosam, doloremque excepturi accusantium porro voluptas rerum vero tempora ab consectetur. Incidunt alias, mollitia molestiae voluptatum ad, provident hic possimus error eum ea enim eos quod quisquam? Minima quidem praesentium iste dignissimos delectus. Illum magnam ratione labore quia distinctio possimus quo aliquam at officiis porro dignissimos, aut et eveniet doloribus perferendis amet ipsa tempore temporibus libero dolore saepe sit velit ipsam nostrum. Porro sit, maiores deleniti molestiae quidem sed distinctio quisquam doloribus id repellat nostrum modi dolorum, eaque voluptatum ipsum, odit voluptatibus? Labore, neque harum. Mollitia illo quisquam cupiditate!</p>
+
+<button onclick="printing()"> print content</button>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quo fugiat minus facere aliquam minima provident, adipisci porro earum dolorem voluptatibus consequuntur voluptas inventore sit molestiae odit. Suscipit numquam ipsa nulla, nobis accusamus quo. Aliquam quaerat dolor commodi earum! Tempora voluptatum earum officia nulla nemo pariatur dolorum adipisci et, voluptates nihil, ipsa ea repudiandae quia alias accusamus vero enim architecto, molestiae perspiciatis sequi illum voluptas non dolor. Error velit iste sit deleniti consequuntur fuga et, cum, laboriosam aperiam quaerat optio magnam. Placeat, nostrum corporis. Iste repellendus eligendi, eos officiis deserunt esse, harum vel numquam error aperiam laborum nobis, inventore nostrum recusandae aut quis? Repudiandae ab natus odit velit sequi placeat. Eveniet minus quidem quisquam quia quas soluta porro aliquid a sint esse voluptates eligendi quae numquam temporibus tenetur perferendis fugiat aperiam tempore, cupiditate aliquam non mollitia laboriosam. Minima eius velit delectus quam hic mollitia! Dolorum sit adipisci quidem. Exercitationem, provident.</p>
+
+</center>
+</body>
+<script type="text/javascript">
+function printing() {
+    var body = document.getElementById("body").innerHTML;
+    var data = document.getElementById("data").innerHTML;
+    // alert(body);
+    document.getElementById("body").innerHTML = data;
+    window.print();
+document.getElementById("body").innerHTML=body;
+    
+}
+
+
+
+
+</script>
+</html>
