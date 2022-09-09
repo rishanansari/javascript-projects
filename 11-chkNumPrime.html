@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check number is prime</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+//A prime number is a positive integer that is only divisible by 1 itself.
+
+var number= prompt("please enter a number");
+
+if (number === 1) {
+    alert(number + " is neither prime nor composite number")
+} else if (number < 1) {
+    alert(number + "enter alue is not a prime number")
+}else{
+    for (let i = 2; i< number ; i++) {
+        if (number%i === 0) {
+            var res = console.log( number + "is not a prime number");
+            break;
+        } else {
+            var res = console.log( number + "is a prime number");
+ 
+        }
+        
+        alert(res);
+    }
+}
+
+
+</script>
+
+</html>

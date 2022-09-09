@@ -1,0 +1,62 @@
+*{
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+background-color: rgb(238, 238, 238);
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px auto;
+    text-align: center;
+    /* background-color:aqua */
+}
+
+#timer{
+text-align: center;
+}
+
+#image{
+    width: 300px;
+    height: 300px;
+}
+.btn{
+    margin: 0px auto;
+    height: 30px;
+    width: 70px;
+    margin: 10px;
+    outline: none;
+    border: 1ps solid rgb(165, 165, 165);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn:hover{
+    box-shadow: 0px 0px 1px 15px rgb(190, 190, 190) inset;
+}
+#teams{
+    /* background-color: red; */
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+#team{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(165, 165, 165);
+    box-shadow: 0px 0px 5px 1px rgb(190, 190, 190) inset;
+}
+#plus_minus{
+    display: flex;
+    align-items: center;
+}
+button{
+    width: 50px;
+    height: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}

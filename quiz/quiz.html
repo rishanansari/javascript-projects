@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="quiz.css" />
+    <title>quiz</title>
+  </head>
+  <body>
+    <div id="teams">
+      <div id="team">
+        <div id="team_head">
+          <h2>team1</h2>
+        </div>
+        <div id="plus_minus">
+          <button onclick="decrement1()">DEC</button>
+          <h2 id="inc1"></h2>
+          <button onclick="increment1()">INC</button>
+        </div>
+      </div>
+      <div id="team">
+        <div id="team_head">
+          <h2>team2</h2>
+        </div>
+        <div id="plus_minus">
+          <button onclick="decrement2()">DEC</button>
+          <h2 id="inc2"></h2>
+          <button onclick="increment2()">INC</button>
+        </div>
+      </div>
+      <div id="team">
+        <div id="team_head">
+          <h2>team3</h2>
+        </div>
+        <div id="plus_minus">
+          <button onclick="decrement3()">DEC</button>
+          <h2 id="inc3"></h2>
+          <button onclick="increment3()">INC</button>
+        </div>
+      </div>
+      <div id="team">
+        <div id="team_head">
+          <h2>team4</h2>
+        </div>
+        <div id="plus_minus">
+          <button onclick="decrement4()">DEC</button>
+          <h2 id="inc4"></h2>
+          <button onclick="increment4()">INC</button>
+        </div>
+      </div>
+      <div id="team">
+        <div id="team_head">
+          <h2>team5</h2>
+        </div>
+        <div id="plus_minus">
+          <button onclick="decrement5()">DEC</button>
+          <h2 id="inc5"></h2>
+          <button onclick="increment5()">INC</button>
+        </div>
+      </div>
+      <div id="team">
+        <div id="team_head">
+          <h2>team6</h2>
+        </div>
+        <div id="plus_minus">
+          <button onclick="decrement6()">DEC</button>
+          <h2 id="inc6"></h2>
+          <button onclick="increment6()">INC</button>
+        </div>
+      </div>
+      <div id="team">
+        <div id="team_head">
+          <h2>team7</h2>
+        </div>
+        <div id="plus_minus">
+          <button onclick="decrement7()">DEC</button>
+          <h2 id="inc7"></h2>
+          <button onclick="increment7()">INC</button>
+        </div>
+      </div>
+      <div id="team">
+        <div id="team_head">
+          <h2>team8</h2>
+        </div>
+        <div id="plus_minus">
+          <button onclick="decrement8()">DEC</button>
+          <h2 id="inc8"></h2>
+          <button onclick="increment8()">INC</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="timer">
+      <h2><span id="seconds">00</span> : <span id="tens">00</span></h2>
+      <button id="button_stop">Stop</button>
+      <button id="button_reset">Reset</button>
+      <button id="button_start">Start</button>
+    </div>
+
+<hr>
+    <div id="container">
+      <div id="i_frame">
+        <iframe
+          src="https://justbuzz.in/"
+          frameborder="0"
+          width="500px"
+          height="300px"
+        ></iframe>
+      </div>
+
+      <div id="inner_container">
+        <img src="image/1.png" id="image" alt="" />
+        <br>
+        <button id="pre" class="btn">Previous</button>
+        <button id="next" class="btn">Next</button>
+      </div>
+    </div>
+
+  </body>
+  <script src="quiz.js"></script>
+</html>
